@@ -1,0 +1,54 @@
+#box{
+	width: 600px;
+	height: 580px;
+	background-color: black;
+	position: relative;
+	margin: auto;
+}
+
+#player{
+	width: 150px;
+	height: 30px;
+	border-radius: 20px;
+	background-color: blue;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+
+
+#object{
+	width: 150px;
+	height: 30px;
+	background-color: blue;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	animation: objects 1.5s infinite linear;
+}
+
+@keyframes objects{
+	0%{ top:0px; }
+	100%{ top:540px; }
+}
+
+#move{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 0px;
+	background-color: white;
+	margin: auto;
+	margin-left: 60px;
+	
+}
+
+.up{
+	bottom: 0px;
+	animation: plate 0.5s infinite linear;
+}
+@keyframes plate{
+	0%{ bottom:0px; }
+	100%{ bottom:1740px; }
+}
+
